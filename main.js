@@ -27,6 +27,7 @@ function createWindow() {
 
 app.whenReady().then(() => {
   console.log("[SYSTEM] Initializing Sidecar Engine...");
+  // process.resourcesPath указывает на папку resources внутри приложения
   const binaryPath = path.join(process.resourcesPath, "bin", "server.bin");
   
   sidecar = spawn(binaryPath, [], {

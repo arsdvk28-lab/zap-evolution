@@ -20,10 +20,15 @@
     "win": {
       "target": "portable"
     },
+    "extraResources": [
+      {
+        "from": "resources/bin/server.bin",
+        "to": "bin/server.bin"
+      }
+    ],
     "files": [
       "main.js",
-      "index.html",
-      "resources/bin/server.bin"
+      "index.html"
     ]
   }
 }
