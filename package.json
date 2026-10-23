@@ -1,6 +1,7 @@
 {
   "name": "singularity-walker",
   "version": "1.0.0",
+  "description": "ZAP-Evolution Morphic Engine",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -21,8 +22,12 @@
     },
     "extraResources": [
       {
-        "from": "resources/bin/server_win.exe",
-        "to": "bin/server_win.exe"
+        "from": "resources/bin/server.bin",
+        "to": "bin/server.bin"
+      },
+      {
+        "from": "resources/bin/server.exe",
+        "to": "bin/server.exe"
       }
     ],
     "files": [
