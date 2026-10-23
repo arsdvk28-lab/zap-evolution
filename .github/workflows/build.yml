@@ -17,9 +17,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "npm"
-          # Убираем префикс electron_wrapper, так как мы уже в корне
-          cache-dependency-path: package-lock.json || package.json
+          cache: npm
+          cache-dependency-path: package.json
 
       - name: Install dependencies
         run: npm install
@@ -31,5 +30,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: singularity-walker-windows
-          # Путь к результату сборки относительно корня
           path: dist_prod/*.exe
