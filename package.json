@@ -22,6 +22,7 @@
     },
     "files": [
       "main.js",
+      "index.html",
       "resources/bin/server.bin"
     ]
   }
