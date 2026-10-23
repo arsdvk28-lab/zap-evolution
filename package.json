@@ -1,0 +1,28 @@
+{
+  name: singularity-walker,
+  version: 1.0.0,
+  description: ZAP-Evolution Morphic Engine,
+  main: main.js,
+  scripts: {
+    start: electron .,
+    build: electron-builder
+  },
+  devDependencies: {
+    electron: ^28.0.0,
+    electron-builder: ^24.9.1
+  },
+  build: {
+    appId: com.zap.singularity,
+    productName: Singularity Walker,
+    directories: {
+      output: dist_prod
+    },
+    win: {
+      target: portable
+    },
+    files: [
+      main.js,
+      resources/bin/server.bin
+    ]
+  }
+}
