@@ -22,13 +22,14 @@
     },
     "extraResources": [
       {
-        "from": "resources/bin/server.bin",
-        "to": "bin/server.bin"
+        "from": "resources/bin",
+        "to": "bin"
       }
     ],
     "files": [
       "main.js",
-      "index.html"
+      "index.html",
+      "package.json"
     ]
   }
 }
